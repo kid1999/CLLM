@@ -7,7 +7,7 @@
 ### 架构图 (Architecture diagram)
 ![效果图](./overview.png)
 
-### 目录结构(Directory structure)
+### 目录结构 (Directory structure)
 
 ```
 1. contracts: smart contract
@@ -36,12 +36,12 @@
 7. Start the frontend: Download node.js, then launch the frontend in the console (web/llm-orcle-front). After installing dependencies (`npm install`), modify the frontend constants (web/llm-orcle-front/src/contractABI/userContract.js) with the contract address and wallet private key. Finally, start the service (`npm run serve`).
 ```
 
-#### conda环境依赖库(conda environment dependency library)
+### Python环境依赖库 (Python environment dependency library)
 ```
 pip install -r requirements.txt
 ```
 
-### 前端依赖项(Frontend dependencies)
+### 前端依赖项 (Frontend dependencies)
 ```
 "core-js": "^3.8.3",
 "element-ui": "^2.15.14",
