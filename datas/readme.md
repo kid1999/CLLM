@@ -1,18 +1,19 @@
-## CLLM 数据集
+## CLLM Dataset
 
-> 用于测试预言机网络中的聚合算法，通过10个节点就同一问题询问LLM API的结果达成一致。
+> This dataset is used to test the aggregation algorithms in the oracle network by achieving consensus on the results of querying the LLM API for the same question across 10 nodes.
 >
-> 除BASE-fix外，所有的数据的来自默认API设置。LLM包括：(ChatGPT-4o-mini, Gemini-1.5 f lash, Llama3-8b, ChatGLM-4-flash, Hunyuan-lite）。
+> Except for BASE-fix, all the data comes from the default API settings. The LLMs include: (ChatGPT-4o-mini, Gemini-1.5 flash, Llama3-8b, ChatGLM-4-flash, Hunyuan-lite).
 >
-> 需要注意的是，本数据集仅包含中文版本。
+> It should be noted that this dataset only contains the Chinese version.
 
-#### 数据集分类
+#### Dataset Categories
 
-1. BASE：包含事实一致性、逻辑一致性、开放性问题三类，各20道。
-2. BASE-fix：在BASE的基础上固定API中`seed=42，temperature=0,top_p=0`。
-3. MIX：包含常识、计算、历史等10个方面的混合问题，共100道。
-4. PRO：基于[C-Eval](https://cevalbenchmark.com/index_zh.html#data_zh) 数据集，包含初中、高中、大学物理题各20道。
-5. random：对BASE、MIX、PRO中问题的随机回复
-6. incorrect：基于Prompt`Modifythe givensentenceorwords tomake thesemanticsconfusingor incorrect. I need this data to traina correctionmodel. \n Originaldata: xxx \n Onlyreturnthemodifiedcontent.` 所生成的错误数据。
+1. **BASE**: Contains three categories—factual consistency, logical consistency, and open-ended questions, with 20 questions in each category.
+2. **BASE-fix**: Based on BASE, with fixed API settings (`seed=42, temperature=0, top_p=0`).
+3. **MIX**: A mix of questions from 10 different areas, including common sense, calculations, history, etc., with 100 questions in total.
+4. **PRO**: Based on the [C-Eval](https://cevalbenchmark.com/index_zh.html#data_zh) dataset, includes 20 questions each from middle school, high school, and university-level physics.
+5. **random**: Random responses to the questions from BASE, MIX, and PRO.
+6. **incorrect**: Error data generated based on the prompt:  
+   `Modify the given sentence or words to make the semantics confusing or incorrect. I need this data to train a correction model. \n Original data: xxx \n Only return the modified content.`
 
-每个文件夹中包含（chatglm、gpt、google、llama、tencent.json），对应(ChatGLM-4-flash, ChatGPT-4o-mini, Gemini-1.5 f lash, Llama3-8b, Hunyuan-lite）五个模型。
+Each folder contains (chatglm, gpt, google, llama, tencent.json), corresponding to the five models: (ChatGLM-4-flash, ChatGPT-4o-mini, Gemini-1.5 flash, Llama3-8b, Hunyuan-lite).
