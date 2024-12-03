@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "result",
+						"type": "string"
+					}
+				],
+				"name": "oracleCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OracleContract.sol": "ICallback"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OracleContract.sol": {
+			"keccak256": "0x0fc5e4b2fc31ab0b8b1e7d2b757d248a4cb03e6d47bd2e18989179f4a470db66",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a748bc94dbb4c354d4f632584c68b65468bf9cfa0c8bb38433322db553f11cf1",
+				"dweb:/ipfs/QmXgi7hFjFH4EtPaswLXjeovU4ZnZU5CngYpz6A4xxBNjy"
+			]
+		}
+	},
+	"version": 1
+}
